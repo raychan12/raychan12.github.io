@@ -12,10 +12,14 @@ header {
     margin-right: auto;
 }
 
+.nav {
+    height: 80px;
+}
+
 .menu-group {
     list-style: none;
     display: inline-block;
-    padding: 28px;
+    padding-right: 28px;
 }
 
 .menu-item {
