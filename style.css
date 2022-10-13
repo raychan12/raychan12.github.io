@@ -13,13 +13,22 @@ header {
 }
 
 .nav {
-    height: 80px;
+    
+    display: flex;
+    align-items: center;
 }
 
 .menu-group {
     list-style: none;
     display: inline-block;
     padding-right: 28px;
+}
+
+.sns-group {
+    list-style: none;
+    display: inline-block;
+    padding-right: 28px;
+    
 }
 
 .menu-item {
@@ -29,11 +38,13 @@ header {
 }
 
 .menu-item a {
+    display: inline-block;
     text-decoration: none;
     color: #585858;
 }
 
 .menu-item:hover a {
+    display: inline-block;
     text-decoration: none;
     color: #276072;
 }
