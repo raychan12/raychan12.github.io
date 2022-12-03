@@ -103,6 +103,16 @@ img {
     background-color: white;
 }
 
+.content-title {
+    border-bottom: 1px solid;
+    border-color: #276072;
+    padding-top: 24px;
+}
+
+.content-title a {
+    color: #276072;
+}
+
 .blog-content {
     display: flex;
     align-items: flex-start;
@@ -116,7 +126,7 @@ img {
 .blog-content-text {
     display: flex;
     flex-direction: column;
-    padding-right: 32px;
+    margin-right: auto;
 }
 
 .blog-title {
@@ -126,6 +136,11 @@ img {
 
 .blog-name a {
     color: #276072;
+    text-decoration: none;
+}
+
+.blog-name:hover a {
+    text-decoration: underline;
 }
 
 .blog-date {
