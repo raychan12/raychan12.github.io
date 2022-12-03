@@ -159,3 +159,27 @@ img {
     color: #585858;
     line-height: 150%;
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #efefef;
+    align-items: center;
+    margin-top: 128px;
+}
+
+.footer-group {
+    margin: 32px;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content {
+    list-style: none;
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 90%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #585858;
+}

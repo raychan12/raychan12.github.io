@@ -142,7 +142,50 @@ table {
 }
 
 table td {
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 95%;
     padding-top: 10px;
     padding-right: 48px;
+    color: #585858;
+}
+
+.community {
+    margin-top: 24px;
+    margin-left: 20px;
+}
+
+.community-item {
+    padding-top: 10px;
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 95%;
+    color: #585858;
+}
+
+.community-item a {
+    text-decoration: none;
+    color: #276072;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #efefef;
+    align-items: center;
+    margin-top: 128px;
+}
+
+.footer-group {
+    margin: 32px;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content {
+    list-style: none;
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 90%;
+    margin-top: 8px;
+    margin-bottom: 8px;
     color: #585858;
 }
