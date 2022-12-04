@@ -1,0 +1,198 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+header {
+    z-index: 40;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+}
+
+img {
+    vertical-align: top;
+}
+
+.title {
+    margin-right: auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-group {
+    list-style: none;
+    display: inline-block;
+    padding-right: 28px;
+}
+
+.sns-group {
+    list-style: none;
+    display: inline-block;
+    padding-right: 28px;
+    align-items: center;
+}
+
+.menu-item {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu-item a {
+    display: inline-block;
+    text-decoration: none;
+    color: #585858;
+}
+
+.menu-item:hover a {
+    display: inline-block;
+    text-decoration: none;
+    color: #276072;
+}
+
+.menu-item-selected {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu-item-selected a {
+    display: inline-block;
+    text-decoration: none;
+    color: #276072;
+    position: relative;
+}
+
+.menu-item-selected a::after {
+    position: absolute;
+    left: 0;
+    top: 45px;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #276072;
+}
+
+.biography-top {
+    z-index: 10;
+    display: block;
+    width: 100%;
+    height: 214px;
+    background-image: url("src/toppic6.png");
+    background-repeat: repeat;
+    background-position: -4px;
+    background-size: auto, cover;
+}
+
+.biography-top-rectangle {
+    z-index: 40;
+    width: 10%;
+    height: 100%;
+    margin-left: 90%;
+    background-color: white;
+}
+
+.skill-group {
+    margin-top: 32px;
+}
+
+.group-title {
+    border-bottom: 1px solid;
+    border-color: #276072;
+}
+
+.group-title a {
+    color: #276072;
+}
+
+.material-symbols-outlined {
+    margin-top: 8px;
+}
+
+.example-group {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.skill-item-familiar {
+    list-style: none;
+    padding: 8px 12px 8px 12px;
+    margin-right: 8px;
+    margin-top: 12px;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(39, 96, 114, 0.1);
+    border: 1px solid;
+    border-color: #276072;
+    border-radius: 8px;
+}
+
+.skill-item-familiar a {
+    color: #585858;
+    font-weight: 600;
+}
+
+.skill-item-familiar i {
+    color: #276072;
+}
+
+.skill-item-beginner {
+    list-style: none;
+    padding: 8px 12px 8px 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid;
+    border-color: #585858;
+    border-radius: 8px;
+    margin-top: 12px;
+    margin-right: auto;
+}
+
+.skill-item-beginner a {
+    color: #585858;
+    font-weight: 600;
+}
+
+.skill-item-beginner i {
+    color: #585858;
+}
+
+.skills-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #efefef;
+    align-items: center;
+    margin-top: 128px;
+}
+
+.footer-group {
+    margin: 32px;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content {
+    list-style: none;
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 90%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #585858;
+}
