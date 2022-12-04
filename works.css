@@ -104,7 +104,7 @@ img {
 }
 
 .works-group {
-    margin-top: 24px;
+    margin-top: 48px;
 }
 
 .group-title {
@@ -119,13 +119,13 @@ img {
 .work-content {
     display: flex;
     align-items: flex-start;
-    padding-top: 28px;
+    padding-top: 40px;
 }
 
-.work-content-text {
+.work-content-text-l {
     display: flex;
     flex-direction: column;
-    margin-right: max(32px, auto);
+    padding-right: 32px;
 }
 
 .work-title {
@@ -139,6 +139,8 @@ img {
 
 .work-date {
     padding-left: 20px;
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 90%;
 }
 
 .work-date a {
@@ -152,6 +154,16 @@ img {
 .work-discription a {
     color: #585858;
     line-height: 150%;
+}
+
+.work-content-pic-r {
+    margin: 0 0 0 auto;
+}
+
+.work-content-text-r {
+    display: flex;
+    flex-direction: column;
+    padding-left: 32px;
 }
 
 footer {
