@@ -85,6 +85,7 @@ img {
 }
 
 .biography-top {
+    position: relative;
     z-index: 10;
     display: block;
     width: 100%;
@@ -93,6 +94,16 @@ img {
     background-repeat: repeat;
     background-position: -4px;
     background-size: auto, cover;
+}
+
+.page-title {
+    z-index: 20;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 .biography-top-rectangle {
