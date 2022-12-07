@@ -114,6 +114,14 @@ img {
     background-color: white;
 }
 
+.attention {
+    margin-top: 48px;
+}
+
+.attention a {
+    color: #585858;
+}
+
 .works-group {
     margin-top: 48px;
 }
