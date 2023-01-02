@@ -12,7 +12,7 @@
         <script src="https://kit.fontawesome.com/f05a21cb94.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header style="font-weight: 600;">
+        <header id="header-pc" style="font-weight: 600;">
             <h1 class="title"></h1>
             <nav class="nav">
                 <ul class="menu-group">
@@ -30,13 +30,37 @@
                 </ul>
             </nav>
         </header>
+        <header id="header-phone" style="font-weight: 600;">
+            <h1 class="title"></h1>
+            <input type="checkbox" id="header-right-menu-check">
+            <label for="header-right-menu-check" id="header-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="nav" id="header-right-menu">
+                <ul class="menu-group">
+                    <li class="menu-item"><a href="biography.html">Biography</a></li>
+                    <li class="menu-item"><a href="works.html">Works</a></li>
+                    <li class="menu-item-selected"><a href="skills.html">Skills</a></li>
+                    <li class="menu-item"><a href="https://zenn.dev/raychan" target="_blank" rel="noreferrer noopener">Blog</a></li>
+                </ul>
+                <ul class="sns-group">
+                    <li class="menu-item"><a href="https://twitter.com/tm_vhn" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-twitter" style="font-size: 24px;"></i></a></li>
+                    <li class="menu-item"><a href="https://www.instagram.com/_plm_vhn/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-instagram" style="font-size: 24px;"></i></a></li>
+                </ul>
+                <ul class="menu-group">
+                    <li class="menu-item"><a>Language</a></li>
+                </ul>
+            </nav>
+        </header>
         <div class="biography-top">
             <div class="page-title">
-                <img src="src/title7.png" height="103px">
+                <img src="src/title7.png" height="auto" style="max-width: 80%; max-height: 103px;">
             </div>
             <div class="biography-top-rectangle"></div>
         </div>
-        <div style="margin:0 auto;max-width: 1200px;width: 80%;">
+        <div id="page-contents">
             <div class="skills-example">
                 <ul class="skills-group">
                     <li class="skill-item-familiar">
