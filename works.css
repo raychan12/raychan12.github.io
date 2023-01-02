@@ -4,9 +4,10 @@ html {
 
 body {
     height: 100%;
+    position: relative;
 }
 
-header {
+#header-pc {
     z-index: 40;
     display: flex;
     width: 100%;
@@ -15,6 +16,10 @@ header {
     align-items: center;
     position: fixed;
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+}
+
+header input {
+    display: none;
 }
 
 img {
@@ -114,6 +119,12 @@ img {
     background-color: white;
 }
 
+#page-contents-pc {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 80%;
+}
+
 .attention {
     margin-top: 48px;
 }
@@ -207,4 +218,158 @@ footer {
     margin-top: 8px;
     margin-bottom: 8px;
     color: #585858;
+}
+
+@media screen and (max-width: 799px) {
+    #header-pc {
+        display: none;
+    }
+
+    #header-phone {
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 0;
+    }
+
+    header label {
+        transform: all 0.3s;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-left: calc(100vw - 66px);
+    }
+
+    #header-hamburger {
+        padding: 8px;
+        background-color: white;
+        margin-right: 16px;
+    }
+
+    #header-hamburger span {
+        position: relative;
+        z-index: 20;
+        display: block;
+        height: 3px;
+        width: 30px;
+        margin: 4px 0;
+        background-color: #585858;
+        transition: all 0.3s;
+    }
+
+    #header-right-menu-check:checked ~ #header-hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+    #header-right-menu-check:checked ~ #header-hamburger span:nth-child(1) {
+        transform: translateY(11px) rotate(45deg);
+        background-color: #585858;
+    }
+    #header-right-menu-check:checked ~ #header-hamburger span:nth-child(3) {
+        transform: translateY(-11px) rotate(-45deg);
+        background-color: #585858;
+    }
+
+    #header-right-menu {
+        position: fixed;
+        right: -100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        transition: all 0.5s;
+        padding: 80px;
+        margin-top: -100vh;
+        padding-top: 100vh;
+    }
+
+    .menu-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .menu-item {
+        margin: 4px 0;
+    }
+
+    .menu-item-selected a::after {
+        display: none;
+    }
+
+    .sns-group {
+        padding: 0;
+    }
+
+    #header-right-menu-check:checked ~ #header-right-menu {
+        right: 0;
+    }
+
+    .biography-top {
+        height: 134px;
+    }
+
+    .biography-top-rectangle {
+        display: none;
+    }
+
+    .page-title {
+        top: 60%;
+        left: 55%;
+    }
+
+    #page-contents-pc {
+        display: none;
+    }
+
+    #page-contents-mobile {
+        margin: 0 auto;
+        padding: 30px 0 80px;
+        width: calc(100% - 80px);
+    }
+
+    .attention{
+        margin-top: 24px;
+    }
+
+    .attention a {
+        line-height: 150%;
+    }
+
+    .work-content {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 0;
+        
+    }
+
+    .work-discription {
+        padding-top: 12px;
+    }
+
+    .work-content-pic {
+        padding-top: 24px;
+        margin: 0 40px;
+    }
+
+    footer {
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .work-content-pic {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #header-phone {
+        display: none;
+    }
+
+    #page-contents-mobile {
+        display: none;
+    }
 }
