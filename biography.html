@@ -12,7 +12,7 @@
         <script src="https://kit.fontawesome.com/f05a21cb94.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header style="font-weight: 600;">
+        <header id="header-pc" style="font-weight: 600;">
             <h1 class="title"></h1>
             <nav class="nav">
                 <ul class="menu-group">
@@ -30,19 +30,43 @@
                 </ul>
             </nav>
         </header>
+        <header id="header-phone" style="font-weight: 600;">
+            <h1 class="title"></h1>
+            <input type="checkbox" id="header-right-menu-check">
+            <label for="header-right-menu-check" id="header-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="nav" id="header-right-menu">
+                <ul class="menu-group">
+                    <li class="menu-item-selected"><a href="biography.html">Biography</a></li>
+                    <li class="menu-item"><a href="works.html">Works</a></li>
+                    <li class="menu-item"><a href="skills.html">Skills</a></li>
+                    <li class="menu-item"><a href="https://zenn.dev/raychan" target="_blank" rel="noreferrer noopener">Blog</a></li>
+                </ul>
+                <ul class="sns-group">
+                    <li class="menu-item"><a href="https://twitter.com/tm_vhn" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-twitter" style="font-size: 24px;"></i></a></li>
+                    <li class="menu-item"><a href="https://www.instagram.com/_plm_vhn/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-instagram" style="font-size: 24px;"></i></a></li>
+                </ul>
+                <ul class="menu-group">
+                    <li class="menu-item"><a>Language</a></li>
+                </ul>
+            </nav>
+        </header>
         <div class="biography-top">
             <div class="page-title">
-                <img src="src/title5.png" width="320px">
+                <img src="src/title5.png" width="320px" style="max-width: 80%;">
             </div>
             <div class="biography-top-rectangle"></div>
         </div>
-        <div style="margin:0 auto;max-width: 1200px;width: 80%;">
+        <div id="page-contents">
             <div class="biography-title">
                 <div class="biography-icon">
                     <a><img src="src/icon.PNG" height="80px"></a>
                 </div>
                 <div class="biography-name">
-                    <a style="font-size: 20px; font-weight:600;">Ray @ Shizuka Yanagida</a>
+                    <a>Ray @ Shizuka Yanagida</a>
                 </div>
             </div>
             <div class="biography-contents">
@@ -51,16 +75,16 @@
                 </div>
                 <table>
                     <tr>
-                        <td>2019.03</td><td>千葉県立千葉高等学校 普通科 卒業</td>
+                        <td>2019.03</td><td class="table-blank"></td><td>千葉県立千葉高等学校 普通科 卒業</td>
                     </tr>
                     <tr>
-                        <td>2020.04</td><td>東京工業大学 情報理工学院 入学</td>
+                        <td>2020.04</td><td class="table-blank"></td><td>東京工業大学 情報理工学院 入学</td>
                     </tr>
                     <tr>
-                        <td>2021.04</td><td>同 数理・計算科学系 所属</td>
+                        <td>2021.04</td><td class="table-blank"></td><td>同 数理・計算科学系 所属</td>
                     </tr>
                     <tr>
-                        <td>2024.03</td><td>同 学士課程修了予定</td>
+                        <td>2024.03</td><td class="table-blank"></td><td>同 学士課程修了予定</td>
                     </tr>
                 </table>
             </div>
@@ -70,7 +94,7 @@
                 </div>
                 <table>
                     <tr>
-                        <td>2022.08</td><td>FAKE Inc. インターン入社</td>
+                        <td>2022.08</td><td class="table-blank"></td><td>FAKE Inc. インターン入社</td>
                     </tr>
                 </table>
             </div>
@@ -90,10 +114,10 @@
                 </div>
                 <table>
                     <tr>
-                        <td>2017.03</td><td>実用英語技能検定 準1級</td>
+                        <td>2017.03</td><td class="table-blank"></td><td>実用英語技能検定 準1級</td>
                     </tr>
                     <tr>
-                        <td>2020.09</td><td>TOEIC L&R 920</td>
+                        <td>2020.09</td><td class="table-blank"></td><td>TOEIC L&R 920</td>
                     </tr>
                 </table>
             </div>
