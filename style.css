@@ -91,6 +91,11 @@ img {
     margin: 0;
 }
 
+#top-discription a {
+    color: white;
+    font-size: 20px;
+}
+
 .top-rectangle {
     z-index: 40;
     width: 10%;
@@ -182,6 +187,18 @@ img {
     .page-title {
         left: 40px;
         margin-right: 80px;
+    }
+
+    .top {
+        position: relative;
+        z-index: 10;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: url("src/toppic7.png");
+        background-repeat: repeat;
+        background-position: -4px;
+        background-size: auto, cover;
     }
 
     .top-rectangle {
