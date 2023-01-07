@@ -63,6 +63,7 @@ img {
     display: inline-block;
     text-decoration: none;
     color: #585858;
+    font-weight: 600;
 }
 
 .menu-item:hover a {
@@ -76,17 +77,13 @@ img {
     z-index: 10;
     display: block;
     width: 100%;
-    height: 100%;
-    background-image: url("src/toppic6.png");
-    background-repeat: repeat;
-    background-position: -4px;
-    background-size: auto, cover;
+    height: 400px;
 }
 
 .page-title {
     position: absolute;
     z-index: 20;
-    bottom: 50px;
+    top: 300px;
     left: 50px;
     margin: 0;
 }
@@ -97,11 +94,112 @@ img {
 }
 
 .top-rectangle {
-    z-index: 40;
+    z-index: 10000;
     width: 10%;
     height: 100%;
     margin-left: auto;
     background-color: white;
+}
+
+#page-contents {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 80%;
+}
+
+#about {
+    margin-top: 40px;
+}
+
+#about a {
+    font-size: 24px;
+    font-weight: 600;
+    color: #276072;
+}
+
+#profile {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+}
+
+#name {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+#name a {
+    color: #585858;
+}
+
+#explain {
+    display: flex;
+}
+
+.asis {
+    margin-top: 40px;
+    width: 47%;
+}
+
+.asis-title {
+    display: flex;
+    align-items: baseline;
+}
+
+.asis-content {
+    margin-top: 20px;
+}
+
+.asis-content a {
+    font-size: 16px;
+    font-weight: 300;
+    color: #585858;
+    line-height: 150%;
+}
+
+#more {
+    margin: 32px 0;
+}
+
+#more-contents {
+    margin-top: 16px;
+    display: flex;
+}
+
+#more-contents a {
+    text-decoration: none;
+    color: #585858;
+    width: 50%;
+}
+
+#more-contents a:hover {
+    color: #276072;
+    font-weight: 600;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #efefef;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.footer-group {
+    margin: 32px;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content {
+    list-style: none;
+    font-family: Hiragino Kaku Gothic Pro;
+    font-size: 90%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #585858;
 }
 
 @media screen and (max-width: 799.98px) {
@@ -184,30 +282,73 @@ img {
         right: 0;
     }
 
-    .page-title {
-        left: 40px;
-        margin-right: 80px;
-    }
-
     .top {
         position: relative;
         z-index: 10;
         display: block;
         width: 100%;
-        height: 100%;
-        background-image: url("src/toppic7.png");
-        background-repeat: repeat;
-        background-position: -4px;
-        background-size: auto, cover;
+        height: 360px;
+    }
+
+    .toppic-pc {
+        display: none;
+    }
+
+    .toppic-phone {
+        position: absolute;
+    }
+
+    .page-title {
+        position: absolute;
+        left: 40px;
+        top: 250px;
+        margin-right: 80px;
     }
 
     .top-rectangle {
         display: none;
     }
+
+    #page-contents {
+        margin: 0 auto;
+        padding: 0 40px;
+        width: calc(100% - 80px);
+    }
+
+    #about {
+        margin: 0;
+    }
+
+    #explain {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .asis {
+        width: 100%;
+    }
+
+    #more-contents {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #more-contents a {
+        width: 100%;
+        margin-bottom: 16px;
+    }
 }
 
 @media screen and (min-width: 800px) {
     #header-phone {
+        display: none;
+    }
+
+    .toppic-phone {
+        display: none;
+    }
+
+    #more-contents-phone {
         display: none;
     }
 }
