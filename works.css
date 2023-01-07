@@ -357,6 +357,14 @@ footer {
         flex-direction: column;
     }
 
+    .work-name {
+        width: 100%;
+    }
+
+    .work-name a {
+        line-height: 150%;
+    }
+
     .work-date {
         padding: 0;
         margin-top: 8px;
