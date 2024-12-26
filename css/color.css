@@ -1,23 +1,23 @@
 :root {
     /*見出し等に使うブランドカラー*/
-    --brand-color-primary: #3C6387
+    --brand-color-primary: #3C6387;
 
     /*テキスト等に使うベースカラー*/
-    --base-color-primary: #222222
-    --base-color-secondary: #555555
-    --base-color-white-fixed: #FFFFFF
+    --base-color-primary: #222222;
+    --base-color-secondary: #555555;
+    --base-color-white-fixed: #FFFFFF;
 
     /*背景色*/
-    --background-color-primary: #FFFFFF
+    --background-color-primary: #FFFFFF;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --brand-color-primary: #4877A2
+        --brand-color-primary: #4877A2;
 
-        --base-color-primary: #FFFFFF
-        --base-color-secondary: #888888
+        --base-color-primary: #FFFFFF;
+        --base-color-secondary: #888888;
         
-        --background-color-primary: #222222
+        --background-color-primary: #222222;
     }
 }

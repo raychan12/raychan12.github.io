@@ -1,0 +1,71 @@
+body {
+    font-family: 'Avenir', 'Hiragino Sans', 'Roboto', 'メイリオ', Meiryo, 'sans-serif';
+}
+
+.hina_copy {
+    font-family: "Hina Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.hina_subcopy {
+    font-family: "Hina Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.section_title {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.link_text {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.subcopy {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.description {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 200%;
+}
+
+.works_category {
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: underline;
+}
+
+.caption {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+@media screen and (max-width: 499.95px) {
+    .description {
+        font-size: 14px;
+    }
+}
+
+  
+  
