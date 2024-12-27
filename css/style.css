@@ -284,3 +284,21 @@ footer {
     bottom: 40px;
     color: var(--base-color-white-fixed);
 }
+
+/* ダークモード対応 */
+@media (prefers-color-scheme: dark) {
+
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 1199.95px) {
+    .works-overview-suupale {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .works-overview-c105personal {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
