@@ -60,6 +60,7 @@ body {
     margin-top: 132px;
     margin-left: 120px;
     margin-right: 120px;
+    margin-bottom: 120px;
     gap: 64px;
     display: flex;
     flex-direction: column; 
@@ -156,6 +157,10 @@ body {
     height: 160px;
 }
 
+.margin1 {
+    height: 16px;
+}
+
 .link-button {
     width: 240px;
     height: 64px;
@@ -165,12 +170,80 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-}
-
-.link-button-text {
     color: var(--brand-color-primary);
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* .page-top-logo img {
-    background: var(--base-color-white-fixed);
-} */
+.link-button:hover {
+    background-color: var(--brand-color-primary);
+    color: var(--base-color-white-fixed);
+}
+
+.profile-contents {
+    display: flex;
+    gap: 40px;
+}
+
+.profile-icon img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.profile-name {
+    margin-bottom: 8px;
+    color: var(--base-color-primary);
+}
+
+.profile-description {
+    width: 100%;
+    color: var(--base-color-primary);
+}
+
+.shirokuma {
+    position: relative;
+}
+
+.shirokuma img {
+    position: absolute;
+    top: -80px;
+    left: 0px;
+    display: none;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.shirokuma:hover img {
+    display: block;
+    opacity: 70%;
+}
+
+.profile-links {
+    display: flex;
+    gap: 32px;
+}
+
+.profile-link {
+    color: var(--brand-color-primary);
+    text-decoration: none;
+    transition: border-bottom  0.3s;
+}
+
+.profile-link i {
+    margin-right: 8px;
+}
+
+.profile-link:hover {
+    border-bottom: 2px solid var(--brand-color-primary);
+}
+
+.link-button i {
+    margin-right: 8px;
+}
+
