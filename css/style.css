@@ -2,6 +2,7 @@ body {
     height: 100%;
     width: 100%;
     max-width: 1440px;
+    min-width: 300px;
     margin: auto;
     position: relative;
     background: var(--background-color-primary);
@@ -351,7 +352,7 @@ footer {
 
     .page-top-mobile {
         display: block;
-        height: 800px;
+        height: 720px;
         overflow: hidden;
         position: relative;
     }
@@ -365,7 +366,7 @@ footer {
     }
 
     .page-top-logo {
-        top: 480px;
+        top: 400px;
         left: 64px;
         height: 250px;
         flex-direction: column;
@@ -379,6 +380,9 @@ footer {
     }
 
     .home-main {
+        margin-top: 108px;
+        margin-left: 64px;
+        margin-right: 64px;
         gap: 80px;
     }
 
@@ -467,5 +471,77 @@ footer {
 
     .website-rights {
         right: 64px;
+    }
+}
+
+@media screen and (max-width: 499.95px) {
+    .page-top-logo {
+        right: 32px;
+        align-items: end;
+    }
+
+    .page-top-copy {
+        align-items: end;
+    }
+
+    .page-top-title {
+        padding-left: 0px;
+        padding-right: 16px;
+    }
+
+    .page-top-subcopy {
+        text-align: right;
+        padding-left: 0px;
+        padding-right: 16px;
+    }
+
+    .home-main {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .footer-logos {
+        left: 32px;
+        height: 80px;
+        gap: 0px;
+    }
+
+    .website-rights {
+        right: 32px;
+    }
+}
+
+@media screen and (max-width: 374.95px) {
+    .page-top-logo {
+        top: 280px;
+        right: 8px;
+    }
+
+    .page-top-title {
+        padding-right: 8px;
+    }
+
+    .page-top-subcopy {
+        padding-right: 8px;
+    }
+
+    .page-top-mobile {
+        height: 600px;
+    }
+
+    .page-top-mobile img {
+        height: 100%;
+    }
+
+    .footer-logos {
+        height: 64px;
+    }
+
+    .footer-logo-circle {
+        height: 100%;
+    }
+
+    .footer-logo-circle img {
+        height: 100%;
     }
 }
