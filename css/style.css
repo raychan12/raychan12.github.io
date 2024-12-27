@@ -56,6 +56,10 @@ body {
     padding-left: 16px;
 }
 
+.page-top-mobile {
+    display: none;
+}
+
 .home-main {
     margin-top: 132px;
     margin-left: 120px;
@@ -244,17 +248,26 @@ body {
 .profile-link {
     color: var(--brand-color-primary);
     text-decoration: none;
-    box-sizing: border-box;
-    transition: border-bottom  0.3s;
+    position: relative;
 }
 
 .profile-link i {
     margin-right: 8px;
 }
 
-.profile-link:hover {
-    border-bottom: 2px solid var(--brand-color-primary);
-    box-sizing: border-box;
+.profile-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.profile-link:hover::after {
+    background-color: var(--brand-color-primary);
 }
 
 .link-button i {
@@ -328,5 +341,30 @@ footer {
     .works-overview-c105personal {
         padding-left: 40px;
         padding-right: 40px;
+    }
+}
+
+@media screen and (max-width: 999.95px) {
+    .page-top-pc {
+        display: none;
+    }
+
+    .page-top-mobile {
+        display: block;
+        height: 800px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .page-top-mobile img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: right;
+        z-index: 0;
+    }
+
+    .page-top-logo {
+
     }
 }
