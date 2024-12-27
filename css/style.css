@@ -103,6 +103,7 @@ body {
 
 .works-card img {
     height: 100%;
+    width: 227px;
 }
 
 .works-subcopy {
@@ -397,6 +398,10 @@ footer {
 
     .works-card {
         height: 180px;
+    }
+
+    .works-card img {
+        width: 128px;
     }
 
     .works-subcopy {
